@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+body {
+    cursor : default;
+}
+#menu ul li:nth-child(1) > a {
+    color : rgb(120,166,217);
+    font-weight: bold;
+}
+#big-banner h2 { display : none; }
+
+#business {
+    overflow : hidden;
+}
+#business .busy-txt {
+    margin : 85px 0;
+    display : flex;
+    justify-content : space-between;    
+    align-items: center;
+}
+#business .busy-txt h2 {
+    font-size : 3rem;
+    font-family: 'Cafe24Ohsquare';
+    line-height: 130%;
+    position : relative;
+    left : -1000px;
+    transition : 0.5;
+    animation : leftmove 2s both;
+}
+@keyframes leftmove {
+    to { left : 0; }
+}
+#business .busy-txt p {
+    text-align: right;
+    font-family: 'GmarketSansMedium';
+    line-height: 150%;
+    letter-spacing: -0.25px;
+    position : relative;
+    right : -1000px;
+    transition : 0.5;
+    animation : rightmove 2s both;
+}
+@keyframes rightmove {
+    to { right : 0; }
+}
+#busy-con {
+    display : flex;
+    justify-content: space-between;
+    height : 450px;
+    margin-bottom : 80px;
+}
+#busy-con .content {
+    width : 350px;
+    height : 450px;
+    position : relative;
+    opacity : 0;
+    transition : 0.5;
+    animation : blank 3s both;
+    animation-delay : 2s;
+}
+@keyframes blank {
+    to { opacity : 1; }
+}
+#busy-con .content img {
+    height : 450px;
+}
+#busy-con .black-bg {
+    background: rgba(0,0,0,0.55);
+    width : 350px;
+    height : 450px;
+    position : absolute;
+    top : 0;
+}
+#busy-con .content .contxt {
+    position : absolute;
+    bottom : 20px;
+    left : 20px;
+    color : white;
+}
+#busy-con .content .contxt h3 {
+    font-family: 'Cafe24Ohsquare';
+    font-size : 1.4rem;
+    margin-bottom : 10px;
+}
+#busy-con .content .contxt p {
+    font-family: 'GmarketSansMedium';
+    font-size : 0.9rem;
+}
+
+#objective {
+    background: url(../img/objective.jpg);
+    width : 1440px;
+    height : 672px;
+    display :flex;
+    justify-content : center;
+    align-items: center;
+}
+#objective h2 {
+    font-family: 'Cafe24Ohsquare';
+    font-weight: normal;
+    width : 550px;
+    font-size : 2.5rem;
+    line-height : 150%;
+    color : white;
+}
+#history {
+    width : 800px;
+    position : relative;
+    padding-top : 50px;
+    margin-left : -10px;
+}
+#history > div {
+    display : flex;
+    flex-direction: column;
+}
+#history .his-txt {
+    display : flex;
+    font-family: 'GmarketSansMedium';
+    font-size : 0.8rem;
+    justify-content: space-between;
+    margin-bottom : 30px;
+    color : white;
+}
+#history .his-txt .date {
+    flex : 0.28;
+}
+#history .his-txt .circle {
+    width : 30px;
+    height : 30px;
+    background: white;
+    border-radius: 50%;
+}
+#history .his-txt .para {
+    flex : 0.6;
+}
+#historyLine {
+    position : absolute;
+    height : 370px;
+    border : 0;
+    border-left : 4px solid rgba(255,255,255,0.5);
+    top : 0px;
+    left: 274.3px;
+}
